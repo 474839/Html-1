@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="no index,nofollow">
+    <meta name="description" content="pizza website">
+    <title>Place order </title>
+    <link rel="stylesheet" href="pizzaorder.css">
+</head>
+<body>
+    <header>Coustamize your order </header> 
+        
+        <section>
+        <!-- User can select their preferred pizza here -->
+        <form id="customPizzaOrder">
+            <fieldset>
+              <h3>CREATE YOUR PIZZA</h3>
+               <div> 
+                <label for="contentList">Choose your pizza</label>
+                <select id="contentList" name="contentList">
+                    <option value="content1">Pepporoni</option>
+                    <option value="content2">Supreme </option>
+                    <option value="content3">Margherita</option>
+                    <option value="content4">Mushroom & spinach</option>
+                </select>
+               </div>
+                <div>
+                    <label for="pizzaQuantity">How Many Pizzas:</label>
+                    <input type="number" id="pizzaQuantity" name="pizzaQuantity" min="1" max="10">
+                </div>
+                <div>
+                    <label>Extra Toppings:</label>
+                    <div>
+                        <input type="checkbox" id="extra1" name="extras" value="pepperoni">
+                        <label for="extra1">Extra Pepperoni</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="extra2" name="extras" value="mushrooms">
+                        <label for="extra2">Extra Mushrooms</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="extra3" name="extras" value="onions">
+                        <label for="extra3">Extra cheese</label>
+                    </div>
+                </div>
+                <div>
+                    <label for="customerName">Your Full Name:</label>
+                    <input type="text" id="customerName" name="customerName" required>
+                </div>
+                <div>
+                    <label for="customerEmail">Your Email:</label>
+                    <input type="email" id="customerEmail" name="customerEmail" required>
+                </div>
+            </fieldset>
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+    
+        
+</body>

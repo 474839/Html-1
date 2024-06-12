@@ -1,0 +1,191 @@
+/* to to cutomize the background image and its sizing  */
+body {
+    margin: 0;
+    font-family: "Poppins";
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column; /* Allow vertical alignment for header and content */
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/pizza-3007395_1920.jpg"); 
+    background-repeat: no-repeat; /* image wont repeat  */
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px; /* Add padding to the bottom for the footer */
+    
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.2em;  
+    color: #fff;
+}
+
+/* to customize the navigation buttons */
+.nav {
+    display: flex;
+    gap: 20px;  /* Space between each nav link */
+    padding-left: 20px;
+    position: absolute;
+    margin-left: 900px;
+}
+
+.nav a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+/* to highlight the link */
+nav a:hover {
+    color: #FF5F1F;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    max-width: 700px;
+    margin: 20px auto; /* Centering the .menu div */
+}
+
+.item {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.item a {
+    margin-top: 0px;
+    font-size: 1em;
+    color: black;
+    text-decoration: none;
+}
+
+.item a:hover {
+    color: #FF5F1F;
+}
+
+
+
+
+
+/* css for second html file   */
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* White with 50% opacity */
+    width: 500px;
+    border-radius: 8px;
+    position: relative; 
+    backdrop-filter: blur(10px); /* to blur the whole feilset*/
+}
+
+header.h1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    
+}
+.main-head h2 {
+    color:white 
+}
+
+
+/* h3 styling */
+h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input and select field styling */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Button styling */
+button {
+    
+    background-color: #ba511c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block; /* Change display to block to take full width */
+    margin: 0 auto;
+ 
+}
+
+footer {
+   
+    padding: 20px;
+    background-color: black;
+    color: #ccc;
+    text-align: center;
+    width: 100%; /* Ensure the footer spans the entire width */
+    position: fixed; /* Fix the footer at the bottom */
+    bottom: 0; 
+    left: 0; 
+    height: 60px; 
+    overflow: auto; /* Enable scrolling if content exceeds height */
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FF5F1F; /* Change the color on hover if desired */
+}
