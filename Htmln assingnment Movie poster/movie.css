@@ -1,0 +1,96 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster {
+    max-width: 100%;
+    max-height: 100vh;
+    width: 50%; /* Adjust as needed to increase width */
+    height: auto;
+}
+
+.heading  {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #EE2A00;
+    font-size: 1.2em; /* Adjust as needed */
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.main-title {
+    position: absolute;
+    bottom: 125px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 80%; /* Adjust as needed */
+    height: auto;
+}
+
+.subtitle {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    color: #EE2A00;
+    transform: translateX(-50%);
+    font-size: 0.6em; /* Adjust as needed */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.credits {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.75em; /* Adjust as needed */
+    padding: 5px;
+    border-radius: 5px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.credits p {
+    margin: 80px 0;
+}
+
+.logos {
+    position: absolute;
+    bottom: 20px; /* Adjust this value to position the logos correctly */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logos img {
+    margin: 0 10px;
+    max-height: 25px; /* Reduce size to half */
+    opacity: 0.5; /* Make logos transparent */
+}
+
+.trailer a {
+    color: #EE2A00;
+    text-decoration: none;
+    font-size: 1.2em;
+}
